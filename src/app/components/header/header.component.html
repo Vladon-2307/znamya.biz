@@ -1,0 +1,31 @@
+<header class="header">
+  <button class="mobile-menu__button" (click)="isMenuOpen = !isMenuOpen">
+    <img class="mobile-menu__button-img" src="icons/more.png">
+  </button>
+  @if (isMenuOpen){
+    <nav class="mobile-menu">
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/home">главная</a>
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/about-company">о&nbsp;компании</a>
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/collection">коллекция</a>
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/vacancy">вакансии</a>
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/shareholder">акционерам</a>
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/contacts">контакты</a>
+      <a class="mobile-menu__item" routerLinkActive="mobile-link-active" routerLink="/documents">информация</a>
+    </nav>
+  }
+  <img routerLink="/" class="header-logo" src="znamya-logo.png" alt="logo">
+  <nav class="menu">
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/home">главная</a>
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/about-company">о&nbsp;компании</a>
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/collection">коллекция</a>
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/vacancy">вакансии</a>
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/shareholder">акционерам</a>
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/contacts">контакты</a>
+    <a class="menu-item" routerLinkActive="link-active" routerLink="/documents">информация</a>
+  </nav>
+  <div class="social">
+    <a target="_blank" href="https://www.instagram.com/znamyaindustrializatsiivtb/profilecard/?igsh=ZzB5NmR3MXAzdzlo">
+      <img class="social-img" src="icons/instagrm.png" alt="Instagram">
+    </a>
+  </div>
+</header>

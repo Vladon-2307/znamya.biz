@@ -1,0 +1,10 @@
+.content{
+  display: block;
+  min-height: calc(100vh - 70px - 235px);
+}
+
+@media (max-width: 580px){
+  .content{
+    min-height: calc(100vh - 70px - 400px);
+  }
+}

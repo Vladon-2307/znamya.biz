@@ -1,0 +1,92 @@
+<section class="contacts">
+  <div class="contact">
+    <p class="contact-title">Приемная</p>
+    <div class="contact-item">
+      <p class="contact-item__text">тел:</p>
+      <a class="contact-item__link" href="tel:80212602941">
+        8 (0212) 60-29-37
+      </a>
+    </div>
+    <div class="contact-item">
+      <p class="contact-item__text">факс:</p>
+      <a class="contact-item__link" href="tel:80212602941">
+        8 (0212) 60-29-41
+      </a>
+    </div>
+    <div class="contact-item">
+      <p class="contact-item__text">e-mail:</p>
+      <a class="contact-item__link" href="mailto:znamya@znamya.biz">
+        {{ "znamya@znamya.biz" }}
+      </a>
+    </div>
+  </div>
+  <div class="contact">
+    <p class="contact-title">Служба сбыта</p>
+    <div class="contact-item">
+      <p class="contact-item__text">тел:</p>
+      <a class="contact-item__link" href="tel:80212602922">
+        8 (0212) 60-29-22
+      </a>
+    </div>
+    <div class="contact-item">
+      <p class="contact-item__text">e-mail:</p>
+      <a class="contact-item__link" href="mailto:trade@znamya.biz">
+        {{ "trade@znamya.biz" }}
+      </a>
+    </div>
+  </div>
+  <div class="contact">
+    <p class="contact-title">Служба снабжения</p>
+    <div class="contact-item">
+      <p class="contact-item__text">тел:</p>
+      <a class="contact-item__link" href="tel:80212602943">
+        8 (0212) 60-29-43
+      </a>
+    </div>
+    <div class="contact-item">
+      <p class="contact-item__text">e-mail:</p>
+      <a class="contact-item__link" href="mailto:snab@znamya.biz">
+        {{ "snab@znamya.biz" }}
+      </a>
+    </div>
+  </div>
+  <div class="contact">
+    <p class="contact-title">Отдел кадров</p>
+    <div class="contact-item">
+      <p class="contact-item__text">тел:</p>
+      <a class="contact-item__link" href="tel:80212602926">
+        8 (0212) 60-29-26
+      </a>
+    </div>
+    <div class="contact-item">
+      <p class="contact-item__text">e-mail:</p>
+      <a class="contact-item__link" href="mailto:ok@znamya.biz">
+        {{ "ok@znamya.biz" }}
+      </a>
+    </div>
+  </div>
+</section>
+<h1 class="shops-title">Магазины, в которых Вы можете приобрести нашу продукцию:</h1>
+<section class="shops">
+  <table class="table">
+  @for (item of data | async; track item){
+      <h2 class="city">{{item.city}}</h2>
+      @for (shop of item.stores; track shop){
+        <tr class="string">
+          <td class="name">{{shop.name}}</td>
+          <td class="address">{{shop.address}}</td>
+          <td class="phone">
+            @for (it of shop.phone.split(',');track it)
+            {
+              {{it}}<br>
+            }
+          </td>
+          <td class="hours">
+            {{shop.hours}}
+          </td>
+        </tr>
+      }
+  }
+  </table>
+</section>
+

@@ -1,0 +1,19 @@
+.box{
+  width: 250px;
+  padding-top: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border: 1px solid gray;
+  cursor: pointer;
+
+  &-title{
+    font-style: italic;
+    text-align: center;
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  &-img{
+    width: 200px;
+    margin: 10px 25px 25px 25px;
+  }
+}

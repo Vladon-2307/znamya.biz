@@ -1,0 +1,125 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 550px;
+  gap: 50px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 250px;
+  gap: 5px;
+
+  &-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+
+    &__text {
+      text-wrap: nowrap;
+      font-weight: bold;
+
+    }
+  }
+}
+
+//----------------------------------------------------------------------------------//
+
+.shops {
+  max-width: 1240px;
+  padding: 0 20px 30px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+//table, th, td {
+//  border: 1px solid black;
+//}
+
+.table{
+  font-style: italic;
+  font-weight: 500;
+  border-spacing: 0;
+  width: 100%;
+
+  td {
+    padding: 5px 10px;
+  }
+}
+
+.city{
+  padding-top: 20px;
+}
+
+.name{
+  width: calc(50% - 200px);
+}
+
+.address{
+  width: calc(50% - 200px);
+}
+
+.phone{
+  width: 200px;
+}
+
+.hours{
+  width: 200px;
+}
+
+@media (max-width: 680px) {
+  .table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .string {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name,
+  .address,
+  .phone,
+  .hours{
+    width: 100%;
+  }
+}
+
+
+@media (hover: hover) {
+  .contact-item__link:hover {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 580px) {
+  .contacts {
+    grid-template-columns: 1fr;
+    width: 250px;
+    gap: 30px;
+  }
+}
+
+.shops-title{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}

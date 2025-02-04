@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /home
+Allow: /collection
+Allow: /about-company
+Allow: /vacancy
+Allow: /shareholder
+Allow: /contacts
+Allow: /documents
+Disallow: /
+
+host: znamya.biz
+Sitemap: https://znamya.biz/sitemap.xml

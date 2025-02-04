@@ -1,0 +1,96 @@
+:host{
+  display: block;
+  height: 250px;
+  background-color: #2B2A30;
+  color: #D3D3D3;
+}
+
+.footer{
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.address{
+  width: 315px;
+  margin: 0 auto;
+}
+
+@media (hover: hover){
+  .link:hover{
+    color: white;
+  }
+}
+
+.quality-services{
+  display: flex;
+  gap: 10px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin: 20px auto 0 auto;
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 140px;
+    justify-content: center;
+
+    &-img{
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    &-text{
+      text-align: center;
+    }
+  }
+}
+
+.contacts{
+  width: 315px;
+  margin: 10px auto 0 auto;
+
+  &-item{
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text{
+      padding-right: 5px;
+      width: 180px;
+    }
+
+    &__link{
+      font-size: 14px;
+      width: 135px;
+    }
+  }
+}
+
+.copy{
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 580px){
+  :host{
+    height: 420px;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .quality-services{
+    justify-content: center;
+    margin: 10px 0;
+  }
+}

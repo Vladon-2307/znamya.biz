@@ -1,0 +1,13 @@
+<div class="header">
+  <button (click)="back()" class="btn-back"><span class="btn-back__text">&leftarrow;</span></button>
+  <h1 class="title">{{ item.name }}</h1>
+</div>
+<div class="container">
+  <swiper-container slides-per-view="2" speed="1000" autoplay="true" loop="true">
+    <swiper-slide><img class="img-slider" src="{{'/img/'+item.preview+'.jpg'}}" alt="preview"></swiper-slide>
+    @for (image of item.view; track $index) {
+      <swiper-slide><img class="img-slider" src="{{'/img/'+ image +'.jpg'}}" alt="view"></swiper-slide>
+    }
+  </swiper-container>
+</div>
+

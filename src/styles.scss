@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+body::after {
+  background: url("/fon.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  content: "";
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.default-text {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  list-style-type: none;
+}
+
+.h-center {
+  padding-top: 200px;
+  text-align: center;
+}
+
+@media (max-width: 580px){
+  .h-center{
+    padding-top: 100px;
+  }
+}

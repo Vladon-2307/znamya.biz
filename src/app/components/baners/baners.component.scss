@@ -1,0 +1,32 @@
+.baners{
+  width: 720px;
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: 320px 320px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.baner-url{
+  cursor: pointer;
+  width: 320px;
+  height: 100px;
+}
+
+.baner-img{
+  cursor: pointer;
+  width: 320px;
+  height: 100px;
+}
+
+@media (max-width: 720px){
+  .baners{
+    width: 320px;
+    grid-template-columns: 320px;
+    padding: 0 10px;
+  }
+
+  .baner-img, .baner-url{
+    width: 300px;
+  }
+}

@@ -26,6 +26,9 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/robots.txt",
+              "src/.htaccess",
+              "src/sitemap.xml",
               {
                 "glob": "**/*",
                 "input": "public"
