@@ -1,6 +1,11 @@
 <!--<h1 class="center">Скоро новая колекция "Весна-лето 2025". Следите за обновлениями.</h1>-->
+<div class="header">
+  <button (click)="back()" class="btn-back"><span class="btn-back__text">&leftarrow;</span></button>
+  <h1 class="title">{{ data?.name }}</h1>
+</div>
 <section class="collections">
-  @for (item of data; track item){
+
+  @for (item of collections; track item){
     <app-collection-item [item]="item"></app-collection-item>
   }
 </section>

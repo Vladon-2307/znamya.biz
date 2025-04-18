@@ -4,7 +4,7 @@ import {BanersComponent} from '../../components/baners/baners.component';
 import {CybersecurityComponent} from '../../components/cybersecurity/cybersecurity.component';
 
 @Component({
-  selector: 'app-home.page',
+  selector: 'app-h.page',
   standalone: true,
   imports: [
     BanersComponent,

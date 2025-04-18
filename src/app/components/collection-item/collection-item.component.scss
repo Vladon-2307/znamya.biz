@@ -4,6 +4,7 @@
   background-color: rgb(255, 255, 255, 0.5);
   border: 1px solid gray;
   cursor: pointer;
+  min-height: 100%;
 
   &-title{
     font-style: italic;
@@ -14,6 +15,16 @@
 
   &-img{
     width: 200px;
-    margin: 10px 25px 25px 25px;
+    margin: 25px 25px 0 25px;
   }
+}
+
+.info{
+  margin: 25px 25px 25px 25px;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 600;
+
 }

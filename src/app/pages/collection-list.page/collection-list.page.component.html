@@ -1,0 +1,9 @@
+<!--<h1 class="center">Скоро новая колекция "Весна-лето 2025". Следите за обновлениями.</h1>-->
+<section class="collections">
+  @for (item of data; track item){
+    <a [routerLink]="item.url" class="collections-item">
+      <h2>{{item.name}}</h2>
+      <img class="box-img" src="{{item.img}}" alt="preview">
+    </a>
+  }
+</section>

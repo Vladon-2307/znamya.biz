@@ -1,7 +1,14 @@
-@if (item != null){
-  <div class="box" (click)="click()">
-    <h3 class="box-title">{{item?.name}}</h3>
-    <img class="box-img" src="{{'/img/'+item?.preview+'.jpg'}}" alt="preview">
+@if (item != null) {
+  <div class="box">
+    <img class="box-img" src="{{'/img/'+item?.preview}}" alt="preview">
+    @for (inf of item.info; track $index) {
+      <div class="info">
+        <p class="name">{{inf.type}}</p>
+        <p><strong>Модель: </strong>{{inf.model}}</p>
+        <p><strong>Размер: </strong>{{inf.size}}</p>
+        <p><strong>Рост: </strong>{{inf.height}}</p>
+      </div>
+    }
   </div>
 }
 

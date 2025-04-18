@@ -8,6 +8,7 @@
 }
 
 .slogon{
+  display: block;
   max-width: 1200px;
   text-align: center;
   margin: 0 auto;
@@ -16,4 +17,38 @@
   font-size: 20px;
   font-style: italic;
   padding: 20px 0;
+}
+
+.cpimg{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.apimg{
+  //display: flex;
+  //flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.apimg-text{
+  font-size: 20px;
+  max-width: 800px;
+  padding: 0 10px;
+  font-weight: 600;
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+.pimg{
+  display: block;
+  max-width: 50%;
+  margin: 10px auto;
+  object-fit: contain;
 }

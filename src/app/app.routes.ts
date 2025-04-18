@@ -5,8 +5,8 @@ export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
   { path: 'home', loadComponent: () => import('./pages/home.page/home.page.component').then((x) => x.HomePageComponent)},
   { path: 'collection', children: [
-      {path: '', loadComponent: () => import('./pages/collection.page/collection.page.component').then((x) => x.CollectionPageComponent)},
-      {path: 'item', loadComponent: () => import('./pages/collection-item.page/collection-item.page.component').then((x) => x.CollectionItemPageComponent)}
+      {path: '', loadComponent: () => import('./pages/collection-list.page/collection-list.page.component').then((x) => x.CollectionListPageComponent)},
+      {path: ':id', loadComponent: () => import('./pages/collection.page/collection.page.component').then((x) => x.CollectionPageComponent)}
     ]},
   { path: 'about-company', loadComponent: () => import('./pages/about-company.page/about-company.page.component').then((x) => x.AboutCompanyPageComponent)},
   { path: 'contacts', loadComponent: () => import('./pages/contacts.page/contacts.page.component').then((x) => x.ContactsPageComponent)},
